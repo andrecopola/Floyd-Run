@@ -58,9 +58,8 @@ function draw() {
 
   if (events == ("menu" || "start" || "pause" || "respawn")) {
     updateBg();
-    updateStar();    
+    updateStar();
     menu();
-    //events = "play"
   }
     
   if (events == "play") {
@@ -75,7 +74,7 @@ function draw() {
   
   if (events == "respawn") { 
     showPanel();
-    //menu();
+    menu();
     reload();
   }
 }

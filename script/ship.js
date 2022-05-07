@@ -121,8 +121,8 @@ class Ship
 
   destroy()
   {
-    this.shield = barsSize;
-    this.energy = barsSize;
+    this.shield = 100;
+    this.energy = 100;
     this.ships -= 1;
     events == "respawn";
   }
