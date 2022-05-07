@@ -19,8 +19,7 @@ let cover2;
 let cover3;
 let cover4;
 let cover5;
-let floydRun;
-
+let song1;
 
 function preload() {
   cover0 = loadImage("img/cover0.jpg");
@@ -30,8 +29,10 @@ function preload() {
   cover4 = loadImage("img/cover4.jpg");
   cover5 = loadImage("img/cover5.jpg");
   soundFormats("mp3", "ogg");
-  floydRun = loadSound("sound/run.mp3");
+  song1 = loadSound("sound/run.mp3");
 }
+
+// Função setup é executada somente uma vez ao iniciar o app
 
 function setup() {
   cover0.resize(coverWidth, coverHeight);
@@ -52,6 +53,8 @@ function setup() {
     obstacles[i] = new Obstacle();
   }
 }
+
+// Função draw é executada a cada frame e chama as outras funções do app
 
 function draw() {
   background(0);
