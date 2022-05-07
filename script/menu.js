@@ -5,6 +5,7 @@ function menu() {
 }
 
 function playGame() {  
+  song1.play();
   events = "play";
 }
 

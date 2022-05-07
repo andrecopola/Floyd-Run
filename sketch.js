@@ -72,7 +72,7 @@ function draw() {
     updateShip(ship);
     updateProgress();
     showPanel();
-    updateBullets();
+    updateBullets();    
   }
   
   if (events == "respawn") { 
